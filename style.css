@@ -1,0 +1,136 @@
+.Header_Logo_Image {
+  height: 38px;
+  width: 32px;
+  border-radius: 9%;
+  box-shadow:  0px 0px 0px 1px #ff385c;
+  transition: all 600ms ease-in;
+}
+
+.Header_Logo_Image:hover {
+  border-width: 3px;
+  border-radius: 66%;
+  box-shadow:  0px 0px 1px 3px #ff385c;
+  transition: all 400ms ease-out;
+}
+
+.Button-Gradient-Mouse-Cursor-Tracking {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin-top: 32px;
+  background-image: linear-gradient(90deg,#e61e4d 1.83%,#e31c5f 50.07%,#d70466 96.34%);
+  padding: 14px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  opacity: 88%;
+}
+
+.Button-Gradient-Mouse-Cursor-Tracking:hover {
+  box-shadow:  0px 0px 1px 3px #ff385c;
+}
+
+.Button-Gradient-Mouse-Cursor-Tracking span {
+  position: relative;
+}
+
+.Button-Gradient-Mouse-Cursor-Tracking:before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #ff7790, transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.Button-Gradient-Mouse-Cursor-Tracking:hover:before {
+  --size: 200px;
+}
+
+.vert_divider {
+  display: block;
+  position: static;
+  width: 1px;
+  max-height: 297px;
+  border-radius: 77%;
+  margin: -1px;
+  background-color: #ff385c;
+  box-shadow: 0px 0px 1px 1px #ff385c;
+}
+
+.Button_Load_More {
+  display: inline-block;
+  color: #222;
+  margin-bottom: 80px;
+  background-color: #fff;
+  border: 1px solid #222;
+  border-top-color: rgb(34, 34, 34);
+  border-right-color: rgb(34, 34, 34);
+  border-bottom-color: rgb(34, 34, 34);
+  border-left-color: rgb(34, 34, 34);
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+  padding: 14px 24px;
+  transition: all 100ms ease-in;
+}
+
+.Button_Load_More:hover {
+  border-color: #ff385c;
+  box-shadow: inset 0px 0px 3px 1px #ff385c;
+  transition: all 100ms ease-out;
+}
+
+/* Min-Width */
+
+@media(min-width: 1128px) {
+
+  .container-fluid {
+    max-width: 1680px;
+    padding-right: 80px !important;
+    padding-left: 80px !important;
+  }
+
+}
+
+/* Max-Width */
+
+@media(max-width: 1127.98px) {
+  
+  .container-fluid {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+  }
+
+}
+
+@media(max-width: 767px) {
+  .vert_divider {
+    display: none;
+  }
+}
+
+@media(max-width: 743.98px) {
+  
+  .container-fluid {
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+  }
+
+}
